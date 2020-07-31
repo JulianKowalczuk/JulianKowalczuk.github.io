@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>Julian Kowalczuk CV</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+    <style>
+      * {
+        -webkit-print-color-adjust: exact;
+        box-sizing: border-box;
+        z-index: 0;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      body {
+        background: #f5f5f5;
+        color: #fff;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .left-column {
+        display: inline-block;
+        padding-right: 15px;
+        width: 50%;
+      }
+
+      .right-column {
+        float: right;
+        padding-left: 15px;
+        width: 50%;
+      }
+
+      ul {
+        /* override user agent style */
+        -webkit-padding-start: 20px;
+        margin: 0;
+      }
+
+      .canvas-container {
+        position: relative;
+      }
+
+      .canvas-bg {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+      }
+
+      .content {
+        padding: 20px;
+        width: 100%;
+      }
+
+      .header {
+        font-weight: bold;
+        font-size: 14px;
+        height: 110px;
+        position: relative;
+        width: 100%;
+      }
+
+      .header > .canvas-bg > .hb-canvas-bg-dark {
+        fill: #303f9f;
+        height: 100%;
+        width: 100%;
+      }
+
+      .header > .canvas-bg > .hb-canvas-bg-light {
+        fill: #3f51b5;
+        height: 100%;
+        width: 70%;
+      }
+
+      .header > div {
+        padding: 12px 20px;
+      }
+
+      .header > .hb-name {
+        bottom: 0;
+        font-size: 28px;
+        left: 0;
+        position: absolute;
+      }
+
+      .header > a {
+        padding: 12px;
+        position: absolute;
+        right: 30%;
+      }
+
+      .header > .hb-contact {
+        bottom: 0;
+        line-height: 22px;
+        position: absolute;
+        right: 0;
+        width: 30%;
+      }
+
+      .float-right {
+        float: right;
+      }
+
+      .frame-details {
+        margin-bottom: 20px;
+        width: 100%;
+      }
+
+      .frame-details-last {
+        margin-bottom: 0;
+      }
+
+      .frame-details > .canvas-bg {
+        width: 100%;
+      }
+
+      /* Using large width to hack canvas to being responsive for width change while priting */
+
+      .frame-details > .canvas-bg > .fd-canvas-bg-header {
+        fill: #1a237e;
+        height: 30px;
+        width: 9999em;
+      }
+
+      .frame-details > .canvas-bg > .fd-canvas-bg-content {
+        fill: #e8eaf6;
+        height: 100%;
+        width: 9999em;
+      }
+
+      .frame-details > .fd-content {
+        width: 100%;
+      }
+
+      .frame-details > .fd-content > .fd-content-header {
+        font-size: 18px;
+        font-weight: bold;
+        max-width: 100%;
+        padding: 6px 10px 0;
+      }
+
+      .frame-details > .fd-content > .fd-content-details {
+        color: #1a237e;
+        font-size: 16px;
+        line-height: 24px;
+        max-width: 100%;
+        padding: 10px;
+      }
+
+      .law-annotation {
+        color: #1a237e;
+        display: block;
+        font-size: 10px;
+        line-height: 16px;
+        padding: 10px 0;
+      }
+
+      .page {
+        -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+        background: #fff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+        display: block;
+        height: 1123px;
+        margin: 30px auto;
+        width: 794px;
+      }
+
+      .page:hover {
+        -moz-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+        -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+      }
+
+      @media print {
+        @page {
+          /* to be sure that content will not leave print page */
+          margin: 20px;
+          margin-bottom: 0;
+        }
+
+        #Header,
+        #Footer {
+          display: none !important;
+        }
+
+        body,
+        html {
+          visibility: none;
+        }
+
+        .content {
+          padding: 20px 0;
+        }
+
+        .page,
+        .page:hover {
+          -moz-box-shadow: none;
+          -webkit-box-shadow: none;
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+
+  <!--
+    SVG tags usage is necessary,
+       because printer ignores background style attributes
+  -->
+
+  <body>
+    <div class="page">
+      <div class="header canvas-container">
+        <svg class="canvas-bg">
+          <rect class="hb-canvas-bg-dark" />
+          <rect class="hb-canvas-bg-light" />
+        </svg>
+
+        <div class="hb-name">
+          Julian Kowalczuk
+        </div>
+
+        <a href="https://github.com/JulianKowalczuk">
+          <i class="fab fa-github"></i>
+          JulianKowalczuk
+        </a>
+        <br />
+        <a href="https://linkedin.com/in/julian-kowalczuk-66469b131">
+          <i class="fab fa-linkedin-in"></i>
+          julian-kowalczuk-66469b131
+        </a>
+
+        <div class="hb-contact">
+          Artura Grottgera 6/8 m. 17 <br />
+          81-809 Sopot <br />
+          +48 662 157 130 <br />
+          <a href="mailto:julian.kowalczuk@gmail.com">
+            julian.kowalczuk@gmail.com
+          </a>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="frame-details canvas-container">
+          <svg class="canvas-bg">
+            <rect class="fd-canvas-bg-content" />
+            <rect class="fd-canvas-bg-header" />
+          </svg>
+
+          <div class="fd-content">
+            <div class="fd-content-header">Mindset</div>
+
+            <div class="fd-content-details">
+              I'm a passionate looking for challenges. My programme goal is
+              creating clean written code to run awesome apps using modern
+              technologies.<br />
+              There is no chance You will hear <i>it's impossible to do</i> from
+              me. No matter how difficult task may be, there is always way to do
+              it and I'm person who love to face the hardest ones.<br />
+              Except just doing what's assigned to me, I like to share my ideas
+              with team about possible improvements. Working with companies who
+              respect that, make effort to review them and include worth ones
+              into sprint is bless for me.<br />
+              Afterhours I'm working on personal project which is POV of my
+              business idea. Hopefully one day I will roll it out, so there will
+              be no need to present my skills anymore.
+            </div>
+          </div>
+        </div>
+
+        <div class="frame-details canvas-container">
+          <svg class="canvas-bg">
+            <rect class="fd-canvas-bg-content" />
+            <rect class="fd-canvas-bg-header" />
+          </svg>
+
+          <div class="fd-content">
+            <div class="fd-content-header">Programming languages</div>
+
+            <div class="fd-content-details">
+              <div class="left-column">
+                <div>
+                  JavaScript (up to ESNext)
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+                <div>
+                  SASS/LESS/CSS
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+                <div>
+                  TypeScript
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="right-column">
+                <div>
+                  C#
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+                <div>
+                  Dart
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="frame-details canvas-container">
+          <svg class="canvas-bg">
+            <rect class="fd-canvas-bg-content" />
+            <rect class="fd-canvas-bg-header" />
+          </svg>
+
+          <div class="fd-content">
+            <div class="fd-content-header">Frontend skills</div>
+
+            <div class="fd-content-details">
+              <div class="left-column">
+                <div>
+                  React
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  Redux
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  CerebralJS
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  Webpack/Rollup
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  Emotion
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="right-column">
+                <div>
+                  GraphQL
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  Svelte
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  Angular 1.*
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  Bootstrap
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  Jest
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="frame-details canvas-container">
+          <svg class="canvas-bg">
+            <rect class="fd-canvas-bg-content" />
+            <rect class="fd-canvas-bg-header" />
+          </svg>
+
+          <div class="fd-content">
+            <div class="fd-content-header">Backend skills</div>
+
+            <div class="fd-content-details">
+              <div class="left-column">
+                <div>
+                  NodeJS
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  .NET Core
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  .NET Framework
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  EntityFramework
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  GraphQL
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="right-column">
+                <div>
+                  MongoDB
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  MSSQL
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  PostgreSQL
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  Java
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="frame-details canvas-container">
+          <svg class="canvas-bg">
+            <rect class="fd-canvas-bg-content" />
+            <rect class="fd-canvas-bg-header" />
+          </svg>
+
+          <div class="fd-content">
+            <div class="fd-content-header">Other skills</div>
+
+            <div class="fd-content-details">
+              <div class="left-column">
+                <div>
+                  Linux
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  Windows
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  VS Code
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  Visual Studio
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="right-column">
+                <div>
+                  Agile Development
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  GIT
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+
+                <div>
+                  Docker
+                  <span class="float-right">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="content">
+        <div class="frame-details canvas-container">
+          <svg class="canvas-bg">
+            <rect class="fd-canvas-bg-content" />
+            <rect class="fd-canvas-bg-header" />
+          </svg>
+
+          <div class="fd-content">
+            <div class="fd-content-header">Professional experience</div>
+
+            <div class="fd-content-details">
+              <div>
+                <b>Full Stack Developer</b> Powel, Gdańsk (2018 - 2019)<br />
+                Responsible for building React dashboards to manage metering
+                devices<br />
+                and architecting reusables components library<br />
+                <b>Projects:</b><br />
+                <ul>
+                  <li>
+                    <b>Incidents management system</b> React, CerebralJS (JS)<br />
+                    System collects events from external systems and present
+                    them in complex table structures allowing user to manage
+                    them. As fullstack developer I were mostly creating
+                    reusables components and forms on front side, on backend
+                    side I were integrating Swagger with our project.
+                  </li>
+                  <li>
+                    <b>Refactoring map app</b> React, Esri (JS)<br />
+                    It's side project (for described above) presenting incidents
+                    on map and statistics on charts with actions redirecting to
+                    management system. I had to refactor almost all application
+                    created by intern to make it work.
+                  </li>
+                  <li>
+                    <b>Rewrite map app</b> React, Esri, Leaflet (TypeScript)<br />
+                    At the end refactored map solution was not good enough (Esri
+                    client library had many limitations), so we had to rewrite
+                    it completly. I created myself new project using TypeScript
+                    and Leaflet library, what improved performance much thanks
+                    to multi-level normalization for points arrangement.
+                  </li>
+                </ul>
+              </div>
+
+              <hr />
+
+              <div>
+                <b>.NET Developer</b> NDI, Sopot (2017) <br />
+                Responsible for desktop applications development (WPF and
+                Windows.Forms),<br />
+                refactor web applications and SQL databases. I were the only
+                person working on projects.<br />
+                <b>Projects:</b><br />
+                <ul>
+                  <li>
+                    <b>Barcode printing app</b> Windows.Forms<br />
+                    Inside company, every document had to be identified by
+                    special number (and barcode). App had to be universal enough
+                    to print them on different paper sheets and different
+                    printers.
+                  </li>
+                  <li>
+                    <b>Documents identifier and deliver</b> Windows Service<br />
+                    Every document scanned inside company had to be read by OCR
+                    library and depending on barcode deliver to specific
+                    external system. That one were a bit tricky, because some
+                    scan files were corrupted sometimes or barcode weren't clear
+                    enough to read it.
+                  </li>
+                  <li>
+                    <b>Migration from PostgreSQL to MSSQL</b> Java, PostgreSQL,
+                    MSSQL <br />
+                    It was time for huge refactor of internal CRM. Some queries
+                    were native written, anothers using pseudo ORM. It was
+                    really painful for me as developer and let me understand how
+                    key clean code is.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="content">
+        <div class="frame-details canvas-container">
+          <svg class="canvas-bg">
+            <rect class="fd-canvas-bg-content" />
+          </svg>
+
+          <div class="fd-content">
+            <div class="fd-content-details">
+              <div>
+                <b>Junior Full Stack Developer</b> Kleder, Gdynia (2016)<br />
+                Responsible for building MVC Core applications with
+                communication of AngularJS frontend,<br />
+                creating mobile POC’s using the Xamarin, Cordova and OpenCV<br />
+                <b>Projects:</b><br />
+                <ul>
+                  <li>
+                    <b>Crawler app</b> WPF<br />
+                    For testing my skills purpose I had to write Crawler app
+                    parsing website content and digging deeply in links.
+                    Performance was important here, so I had to test plenty of
+                    libraries to find best solutions.
+                  </li>
+                  <li>
+                    <b>Management system</b> .NET Framework, AngularJS,
+                    Bootstrap <br />
+                    MVC project to manage co-workers, settlements and products,
+                    connecting with external client's APIs with multilevel
+                    permission authentication. I were creating forms and
+                    settings panel on front side, on backend side routes
+                    necessary for my part of work.
+                  </li>
+                  <li>
+                    <b>Geolocalizer POC</b> Xamarin <br />
+                    Simply geolocalizer app. I had to find best solution for
+                    accurate results even with building and create simply
+                    backend logging data about my location changes.
+                  </li>
+                  <li>
+                    <b>Marks recognizer</b> Xamarin, OpenCV <br />
+                    One of our client was interested in game where people had to
+                    collect points in checkpoints. Accurate results but without
+                    battery drilling... For me as junior it was really tricky.
+                    OpenCV is powerful library, but I had many problems with its
+                    wrapper for Xamarin and spent a lot of time to callibrate
+                    settings well.
+                  </li>
+                </ul>
+              </div>
+
+              <hr />
+
+              <div>
+                <b>Freelancer</b> (2014 - now) <br />
+                Websites development and deployment in direct cooperation with
+                clients. At the start I were doing simply static or WordPress
+                websites. Then I dropped it and decided to work as contractor
+                (what I actually do). I won't list websites here (nothing
+                special, because I had poor experience while I were creating
+                them).<br />
+                <b>Projects:</b><br />
+                <ul>
+                  <li>
+                    <b>Photobooth app for Opener Festival event</b> React (JS),
+                    Node.js, .NET Core<br />
+                    App were taking photos and sending them by email or SMS. It
+                    was huge challenge for me and my friend. We got this offer
+                    just few days before event. He was lead developer, so most
+                    of app I created by myself. Project wasn't so hard, but
+                    because of time restriction I felt like on hackathon during
+                    development process.
+                  </li>
+                  <li>
+                    <b>Internal CRM</b> React (JS), Redux, Redux-Form <br />
+                    App for huge customer. They needed specific structure of
+                    forms and events system with custom set of rules firing
+                    actions manipulating form or app behaviour. I had to
+                    override redux-form logic and create really complex UI.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="content">
+        <div class="frame-details canvas-container">
+          <svg class="canvas-bg">
+            <rect class="fd-canvas-bg-content" />
+            <rect class="fd-canvas-bg-header" />
+          </svg>
+
+          <div class="fd-content">
+            <div class="fd-content-header">Languages</div>
+
+            <div class="fd-content-details">
+              English (upper-intermediate)<br />
+              Polish (native)
+            </div>
+          </div>
+        </div>
+
+        <div class="frame-details canvas-container">
+          <svg class="canvas-bg">
+            <rect class="fd-canvas-bg-content" />
+            <rect class="fd-canvas-bg-header" />
+          </svg>
+
+          <div class="fd-content">
+            <div class="fd-content-header">Hobby</div>
+
+            <div class="fd-content-details">
+              Personal development <br />
+              Software development <br />
+              Electro music <br />
+              Basketball
+            </div>
+          </div>
+        </div>
+
+        <i class="law-annotation">
+          I hereby give consent for my personal data included in my application
+          to be processed for the purposes of the recruitment process under the
+          Personal Data Protection Act as of 29 August 1997, consolidated text:
+          Journal of Laws 2016, item 922 as amended.
+        </i>
+      </div>
+    </div>
+  </body>
+</html>
